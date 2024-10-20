@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <main id="calculator-container">
+        <section class="calculator">
+            <div class="screen">
+                <input type="text" name="result" id="result" readonly aria-label="Calculator display">
+            </div>
+            <div class="buttons">
+                <button class="operator" aria-label="Percentage" onclick="addToScreen('%')">%</button>
+                <button class="operator" aria-label="Division" onclick="addToScreen('/')">/</button>
+                <button class="operator" aria-label="Multiplication" onclick="addToScreen('*')">*</button>
+                <button class="operator" aria-label="Subtraction" onclick="addToScreen('-')">-</button>
+                <button aria-label="7" onclick="addToScreen('7')">7</button>
+                <button aria-label="8" onclick="addToScreen('8')">8</button>
+                <button aria-label="9" onclick="addToScreen('9')">9</button>
+                <button class="operator" aria-label="Addition" onclick="addToScreen('+')">+</button>
+                <button aria-label="4" onclick="addToScreen('4')">4</button>
+                <button aria-label="5" onclick="addToScreen('5')">5</button>
+                <button aria-label="6" onclick="addToScreen('6')">6</button>
+                <button class="operator clear" aria-label="Clear" onclick="clearScreen()">C</button>
+                <button aria-label="1" onclick="addToScreen('1')">1</button>
+                <button aria-label="2" onclick="addToScreen('2')">2</button>
+                <button aria-label="3" onclick="addToScreen('3')">3</button>
+                <button class="operator" aria-label="Equals" onclick="calculate()">=</button>
+                <button aria-label="0" onclick="addToScreen('0')">0</button>
+                <button aria-label="Decimal" onclick="addToScreen('.')">.</button>
+                <button class="operator" aria-label="Backspace" onclick="backspace()">←</button>
+            </div>
+        </section>
+    </main>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
