@@ -1,0 +1,2 @@
+Bouncing Balls Calculator
+This project combines a functional calculator with an interactive background. It performs basic arithmetic operations while featuring a playful, dynamic visual effect. Each time a user clicks on the background, vibrant bouncing balls appear, adding an engaging and fun experience to the otherwise simple calculator interface. The calculator supports regular operations while also providing an aesthetic touch to make calculations enjoyable.
